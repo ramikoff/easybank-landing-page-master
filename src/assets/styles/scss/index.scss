@@ -1,11 +1,9 @@
 @import 'lib/reset.scss';
 @import 'lib/base.scss';
+@import 'lib/layout.scss';
+@import 'lib/variables.scss';
+@import 'lib/text.scss';
+@import 'lib/helpers.scss';
+@import 'lib/bootstrap-grid.css';
 
 
-.container {
-  width: 70%;
-
-  &--fluid {
-    width: 100%;
-  }
-}

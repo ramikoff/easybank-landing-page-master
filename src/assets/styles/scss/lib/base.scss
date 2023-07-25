@@ -72,16 +72,3 @@ body {
   width: 100%;
 }
 
-.display--none {
-  display: none;
-}
-
-
-.content {
-  border: 1px solid red;
-  height: 100vh;
-
-  &-outer {
-    border: 1px solid blue;
-  }
-}

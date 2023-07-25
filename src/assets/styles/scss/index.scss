@@ -1,0 +1,11 @@
+@import 'lib/reset.scss';
+@import 'lib/base.scss';
+
+
+.container {
+  width: 70%;
+
+  &--fluid {
+    width: 100%;
+  }
+}

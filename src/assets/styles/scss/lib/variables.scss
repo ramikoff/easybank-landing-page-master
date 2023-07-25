@@ -1,19 +1,14 @@
 //Colors
-$white: #FFFFFF;
-$greywhite: #fff;
-$black: #000;
-$black-text: #191B20;
-$link-black: #fff;
-$light-black: #fff;
+// primary
+$dark-blue: hsl(233, 26%, 24%);
+$lime-green: hsl(136, 65%, 51%);
+$bright-cyan: hsl(192, 70%, 51%);
+// neutral
+$grayish-blue: hsl(233, 8%, 62%);
+$light-grayish-blue: hsl(220, 16%, 96%);
+$very-light-gray: hsl(0, 0%, 98%);
+$white: hsl(0, 0%, 100%);
 
-$sport-blue: #0C038A;
-$sport-grey: #EEEEEE;
-
-$primary: $sport-blue;
-$secondary: $sport-grey;
-
-
-//TODO: Check if breakpoints match bootstrap grid
 //Breakpoints
 $sm: 576px;
 $md: 768px;

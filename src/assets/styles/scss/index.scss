@@ -64,13 +64,18 @@ header {
   background-color: white;
   z-index: 2;
   position: absolute;
-  top: 80px;
-  left: 10%;
-  right: 10%;
+  top: 100px;
+  left: 5%;
+  right: 5%;
   padding: 2rem;
 
   &__item {
     margin-top: 2rem;
+    border-bottom: 5px solid transparent;
+  }
+
+  &__item:hover {
+    border-bottom: 5px solid $lime-green;
   }
 
 

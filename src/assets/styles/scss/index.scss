@@ -2,9 +2,9 @@
 @import 'lib/base.scss';
 @import 'lib/layout.scss';
 @import 'lib/variables.scss';
+@import 'lib/helpers.scss';
 @import 'lib/bootstrap-grid.css';
 @import 'lib/text.scss';
-@import 'lib/helpers.scss';
 
 
 body {
@@ -13,6 +13,7 @@ body {
   box-sizing: border-box;
 }
 
+//HEADER
 header {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -44,7 +45,7 @@ header {
 
   .burger {
     height: auto;
-    margin-top: 20px;
+    margin-top: 15px;
 
     &:hover {
       cursor: pointer;
@@ -77,8 +78,6 @@ header {
   &__item:hover {
     border-bottom: 5px solid $lime-green;
   }
-
-
 }
 
 
@@ -93,5 +92,20 @@ header {
 
   &:hover {
     background: linear-gradient(90deg, rgba(49, 211, 80, 0.4248074229691877) 0%, rgba(49, 211, 92, 0.5060399159663865) 24%, rgba(6, 205, 247, 0.5648634453781513) 100%);
+  }
+}
+
+
+//HERO
+.hero {
+  &__banner {
+    position: relative;
+    //background-image:  url('../../img/image-mockups.png'), url('../../img/bg-intro-mobile.svg');
+    //background-position: top;
+    //background-size: contain;
+    //background-repeat: no-repeat;
+    background: url('../../img/image-mockups.png') 50% center no-repeat, url('../../img/bg-intro-mobile.svg') 100% bottom no-repeat;
+    background-size: 50%;
+    height: 500px;
   }
 }

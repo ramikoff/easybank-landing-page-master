@@ -1,4 +1,5 @@
-@import 'lib/bootstrap-grid.css';
+@import 'lib/_bootstrap-grid.css';
+@import url("https://fonts.googleapis.com/css?family=Public+Sans");
 html,
 body,
 div,
@@ -84,7 +85,6 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 
@@ -121,7 +121,6 @@ blockquote:after,
 q:before,
 q:after {
   content: "";
-  content: none;
 }
 
 table {
@@ -140,7 +139,6 @@ img {
 html {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  font-family: "Mulish", sans-serif;
 }
 
 * {
@@ -221,12 +219,12 @@ body {
   background-color: hsl(220, 16%, 96%);
 }
 
-.p-m-o {
+.p-0 {
   padding-left: 0;
   padding-right: 0;
 }
 @media screen and (min-width: 768px) {
-  .p-m-o {
+  .p-0 {
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -234,6 +232,16 @@ body {
 
 body {
   font-size: 18px;
+}
+
+.h1 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.h2 {
+  font-size: 2rem;
+  font-weight: 300;
 }
 
 .attribution {
@@ -249,6 +257,8 @@ body {
   background-color: white;
   overflow-x: hidden;
   box-sizing: border-box;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 300;
 }
 
 header {
@@ -261,12 +271,18 @@ header .logo {
   padding: 15px;
 }
 header .nav {
-  text-align: center;
+  text-align: right;
   padding-top: 20px;
+}
+header .nav:hover {
+  cursor: pointer;
 }
 header .nav__item {
   margin-right: 10px;
   padding-bottom: 30px;
+  border-bottom: 1px solid rgba(49, 211, 92, 0);
+  transition: border-bottom 0.2s;
+  transition-timing-function: ease-in-out;
 }
 @media screen and (min-width: 992px) {
   header .nav__item {
@@ -279,12 +295,14 @@ header .nav__item:hover {
 header .burger {
   height: auto;
   margin-top: 15px;
+  max-width: 70px;
 }
 header .burger:hover {
   cursor: pointer;
 }
 header .close-icon {
   display: none;
+  max-width: 20px;
 }
 
 .mobile-nav {
@@ -319,11 +337,64 @@ header .close-icon {
   background: linear-gradient(90deg, rgba(49, 211, 80, 0.424807423) 0%, rgba(49, 211, 92, 0.506039916) 24%, rgba(6, 205, 247, 0.5648634454) 100%);
 }
 
-.hero__banner {
+.hero {
   position: relative;
-  background: url("../../img/image-mockups.png") 50% center no-repeat, url("../../img/bg-intro-mobile.svg") 100% bottom no-repeat;
-  background-size: 50%;
-  height: 500px;
+}
+@media screen and (min-width: 992px) {
+  .hero {
+    height: 40vh;
+  }
+}
+.hero__banner {
+  background-image: url(../../img/image-mockups.png), url(../../img/bg-intro-mobile.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: center top -120px, center top -75px;
+  background-size: 90%, cover;
+  height: 60vh;
+  position: absolute;
+  left: 0;
+}
+@media screen and (min-width: 768px) {
+  .hero__banner {
+    background-image: url(../../img/image-mockups.png), url(../../img/bg-intro-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: center bottom 158px, center bottom 93px;
+    position: relative;
+    background-size: contain, cover;
+  }
+}
+.hero__content-box {
+  margin-top: 60vh;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .hero__content-box {
+    margin-top: 0;
+    padding-top: 3rem;
+    text-align: left;
+  }
+}
+.hero__content {
+  margin-top: 1.5rem;
+}
+@media screen and (min-width: 576px) {
+  .hero__content {
+    margin-top: 2rem;
+  }
 }
 
-/*# sourceMappingURL=index.css.map */
+.image-mockups {
+  position: absolute;
+  top: -10%;
+}
+
+.button {
+  margin: 1rem auto 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .button {
+    margin: 1rem 0 0 0;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,77 @@
+.hero {
+  padding-bottom: 4rem;
+  @media screen and (min-width: $lg) {
+    .h1 {
+      font-size: 3rem;
+    }
+  }
+
+  &__banner {
+    background-image: url("/src/assets/img/image-mockups.png"), url("/src/assets/img/bg-intro-mobile.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: center top -120px, center top -80px;
+    background-size: 90%, cover;
+    height: 50%;
+    position: absolute;
+    left: 0;
+
+    @media screen and (min-width: 452px) and (max-width: 767px) {
+      background-position: center top 100%, center top 80%;
+    }
+
+    @media screen and (min-width: $md) {
+      background-image: url('/src/assets/img/image-mockups.png'), url('/src/assets/img/bg-intro-desktop.svg');
+      background-position: right -100px top -100px, left 8px top -250px;
+      left: 50%;
+      background-size: contain, cover;
+    }
+
+
+    @media screen and (min-width: $lg) {
+      background-image: url("/src/assets/img/image-mockups.png"), url("/src/assets/img/bg-intro-desktop.svg");
+      background-position: right 20px top -100px, left 70px top -175px;
+      left: 45%;
+      background-size: 70%, cover;
+      height: 100%;
+    }
+
+    @media screen and (min-width: $xxl) {
+      background-size: contain, contain;
+      background-position: right -34px top -377px, left 8px top -200px;
+    }
+  }
+
+
+  &__content-box {
+    margin-top: 20rem;
+    text-align: center;
+
+    @media screen and (min-width: $md) {
+      margin-top: 0;
+      padding-block: 2rem;
+      text-align: left;
+    }
+
+    @media screen and (min-width: $xl) {
+      padding-block: 6rem;
+    }
+
+  }
+
+  &__content {
+    margin-top: 1.5rem;
+    @media screen and (min-width: $sm) {
+      margin-top: 2rem;
+    }
+  }
+
+
+
+  .button {
+    margin: 2rem auto;
+    @media screen and (min-width: $md) {
+      margin: 2rem 0;
+    }
+  }
+
+}

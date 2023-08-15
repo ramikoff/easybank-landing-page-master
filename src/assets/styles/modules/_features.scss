@@ -1,0 +1,26 @@
+// FEATURES
+
+.features {
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+
+  @media screen and (min-width: $md) {
+    text-align: left;
+  }
+}
+
+.feature {
+  h2 {
+    margin-top: 2rem;
+  }
+
+  p {
+    margin-top: 2rem;
+  }
+
+  &__icon {
+    max-width: 100px;
+    margin-top: 2.5rem;
+  }
+}

@@ -1,0 +1,15 @@
+.button {
+  background: linear-gradient(90deg, rgba(49, 211, 92, 1) 0%, rgba(49, 211, 92, 1) 24%, rgba(6, 205, 247, 1) 100%);
+  text-align: center;
+  padding: 15px;
+  border-radius: 120px;
+  max-width: 150px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+
+
+  &:hover, &:focus {
+    background: linear-gradient(90deg, rgba(49, 211, 80, 0.4248074229691877) 0%, rgba(49, 211, 92, 0.5060399159663865) 24%, rgba(6, 205, 247, 0.5648634453781513) 100%);
+  }
+}

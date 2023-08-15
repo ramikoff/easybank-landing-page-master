@@ -1,5 +1,4 @@
-@import "variables";
-
+@use 'variables';
 
 .border {
   border: 1px solid black;
@@ -14,7 +13,9 @@
   background-color: $light-grayish-blue;
 }
 
-
+.bg-white {
+  background-color: #FFFFFF;
+}
 .p-0 {
   padding-left: 0;
   padding-right: 0;

@@ -1,0 +1,43 @@
+@import "globals/index";
+
+@include google-font('Public+Sans');
+
+
+body {
+  background-color: white;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-family: $text-font;
+  font-weight: 300;
+}
+
+.row {
+  gap: 2%;
+}
+
+.col-12 {
+  margin-block: 1rem;
+}
+
+.col-md-3 {
+  @media screen and (min-width: $md) {
+    flex: 0 0 23%;
+    max-width: 23%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

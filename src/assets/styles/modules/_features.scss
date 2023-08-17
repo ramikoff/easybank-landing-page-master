@@ -2,11 +2,14 @@
 
 .features {
   text-align: center;
-  padding-top: 4rem;
-  padding-bottom: 5rem;
+
 
   @media screen and (min-width: $md) {
     text-align: left;
+  }
+
+  &__intro-text {
+    margin-top: 1.5rem;
   }
 }
 
@@ -20,7 +23,7 @@
   }
 
   &__icon {
-    max-width: 100px;
+    max-width: 70px;
     margin-top: 2.5rem;
   }
 }

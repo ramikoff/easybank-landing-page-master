@@ -2117,6 +2117,10 @@ body {
   background-color: #FFFFFF;
 }
 
+.bg-accent {
+  background-color: hsl(233, 26%, 24%);
+}
+
 .p-0 {
   padding-left: 0;
   padding-right: 0;
@@ -2154,7 +2158,7 @@ body {
   font-size: 1.2rem;
 }
 
-p {
+p, span {
   color: hsl(233, 8%, 62%);
   font-size: 14px;
   line-height: 1.6;
@@ -2250,9 +2254,12 @@ header .close-icon {
 }
 
 .hero {
-  padding-bottom: 4rem;
+  padding-bottom: 3rem;
 }
 @media screen and (min-width: 992px) {
+  .hero {
+    padding-bottom: 0;
+  }
   .hero .h1 {
     font-size: 3rem;
   }
@@ -2262,7 +2269,7 @@ header .close-icon {
   background-repeat: no-repeat, no-repeat;
   background-position: center top -120px, center top -80px;
   background-size: 90%, cover;
-  height: 50%;
+  height: 330px;
   position: absolute;
   left: 0;
 }
@@ -2273,25 +2280,26 @@ header .close-icon {
 }
 @media screen and (min-width: 768px) {
   .hero__banner {
-    background-image: url("/src/assets/img/image-mockups.png"), url("/src/assets/img/bg-intro-desktop.svg");
-    background-position: right -100px top -100px, left 8px top -250px;
+    background-image: url(/src/assets/img/image-mockups.png), url(/src/assets/img/bg-intro-desktop.svg);
+    background-position: right -70px top -50px, left -40px top -240px;
     left: 50%;
+    height: 700px;
     background-size: contain, cover;
   }
 }
 @media screen and (min-width: 992px) {
   .hero__banner {
-    background-image: url("/src/assets/img/image-mockups.png"), url("/src/assets/img/bg-intro-desktop.svg");
-    background-position: right 20px top -100px, left 70px top -175px;
+    background-image: url(/src/assets/img/image-mockups.png), url(/src/assets/img/bg-intro-desktop.svg);
+    background-position: right -50px top -90px, left 70px top -160px;
     left: 45%;
-    background-size: 70%, cover;
-    height: 100%;
+    background-size: 75%, cover;
+    height: 700px;
   }
 }
 @media screen and (min-width: 1536px) {
   .hero__banner {
     background-size: contain, contain;
-    background-position: right -34px top -377px, left 8px top -200px;
+    background-position: right -35px top -75px, right -120px top -150px;
   }
 }
 .hero__content-box {
@@ -2329,13 +2337,14 @@ header .close-icon {
 
 .features {
   text-align: center;
-  padding-top: 4rem;
-  padding-bottom: 5rem;
 }
 @media screen and (min-width: 768px) {
   .features {
     text-align: left;
   }
+}
+.features__intro-text {
+  margin-top: 1.5rem;
 }
 
 .feature h2 {
@@ -2345,8 +2354,42 @@ header .close-icon {
   margin-top: 2rem;
 }
 .feature__icon {
-  max-width: 100px;
+  max-width: 70px;
   margin-top: 2.5rem;
+}
+
+.articles__headline {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .articles__headline {
+    text-align: left;
+  }
+}
+
+.article {
+  margin-top: 2rem;
+  padding: 0;
+}
+.article, .article__image {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+.article__container {
+  padding: 2rem;
+}
+.article__caption {
+  font-size: 10px;
+  font-weight: bold;
+}
+.article__headline, .article__text {
+  margin-top: 1rem;
+}
+.article__headline {
+  font-size: 1rem;
+}
+.article__text {
+  font-size: 12px;
 }
 
 body {
@@ -2361,15 +2404,29 @@ body {
   gap: 2%;
 }
 
-.col-12 {
-  margin-block: 1rem;
-}
-
 @media screen and (min-width: 768px) {
   .col-md-3 {
     flex: 0 0 23%;
     max-width: 23%;
   }
+}
+
+section:not(.hero) {
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+}
+
+.logo {
+  max-width: 200px;
+  padding: 15px;
+}
+
+footer {
+  padding-block: 5rem;
+  height: 30vh;
+}
+footer, footer a {
+  color: hsl(0, 0%, 100%);
 }
 
 /*# sourceMappingURL=main.css.map */

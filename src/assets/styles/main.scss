@@ -15,10 +15,6 @@ body {
   gap: 2%;
 }
 
-.col-12 {
-  margin-block: 1rem;
-}
-
 .col-md-3 {
   @media screen and (min-width: $md) {
     flex: 0 0 23%;
@@ -27,7 +23,25 @@ body {
 }
 
 
+section:not(.hero) {
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+}
 
+
+.logo {
+  max-width: 200px;
+  padding: 15px;
+}
+
+footer {
+  padding-block: 5rem;
+  height: 30vh;
+  &, a {
+    color: $white;
+  }
+
+}
 
 
 

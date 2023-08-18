@@ -29,18 +29,38 @@ section:not(.hero) {
 }
 
 
-.logo {
-  max-width: 200px;
-  padding: 15px;
-}
 
 footer {
-  padding-block: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
   height: 30vh;
-  &, a {
-    color: $white;
+  color: $white;
+
+  @media screen and (min-width: $md) {
+    height: 15vh;
+   
   }
 
+  a:not(.button) {
+    color: $white;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  .button {
+    margin: 1rem auto 0 auto;
+    @media  screen and (min-width: $md) {
+      margin: 1rem 0 0 auto;
+    }
+  }
+
+}
+
+.social {
+
+  &__icon {
+    margin-right: 0.5rem;
+  }
 }
 
 

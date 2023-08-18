@@ -2132,6 +2132,55 @@ body {
   }
 }
 
+.flex-col-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .flex-col-center {
+    align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .flex-col-md-end {
+    align-items: flex-end;
+  }
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.m-top-1 {
+  margin-top: 1rem;
+}
+
+.m-top-2 {
+  margin-top: 2rem;
+}
+
+.m-top-3 {
+  margin-top: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .m-top-md-1 {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .m-top-md-2 {
+    margin-top: 2rem;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
 body {
   font-size: 18px;
 }
@@ -2174,6 +2223,7 @@ p, span {
 }
 
 .button {
+  display: block;
   background: linear-gradient(90deg, rgb(49, 211, 92) 0%, rgb(49, 211, 92) 24%, rgb(6, 205, 247) 100%);
   text-align: center;
   padding: 15px;
@@ -2416,17 +2466,33 @@ section:not(.hero) {
   padding-bottom: 5rem;
 }
 
-.logo {
-  max-width: 200px;
-  padding: 15px;
+footer {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  height: 30vh;
+  color: hsl(0, 0%, 100%);
+}
+@media screen and (min-width: 768px) {
+  footer {
+    height: 15vh;
+  }
+}
+footer a:not(.button) {
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+footer .button {
+  margin: 1rem auto 0 auto;
+}
+@media screen and (min-width: 768px) {
+  footer .button {
+    margin: 1rem 0 0 auto;
+  }
 }
 
-footer {
-  padding-block: 5rem;
-  height: 30vh;
-}
-footer, footer a {
-  color: hsl(0, 0%, 100%);
+.social__icon {
+  margin-right: 0.5rem;
 }
 
 /*# sourceMappingURL=main.css.map */

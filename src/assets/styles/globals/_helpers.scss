@@ -34,7 +34,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+
   @media screen and (min-width: $md) {
     align-items: flex-start;
   }
@@ -76,6 +76,15 @@
 
 .text-center {
   text-align: center;
+}
+
+
+.fixed {
+  position: fixed;
+}
+
+.p-l-30 {
+  padding-left: 30px;
 }
 
 

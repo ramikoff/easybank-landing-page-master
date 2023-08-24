@@ -9,8 +9,12 @@ body {
   font-weight: 400;
 }
 
-.h1, .h2, .h3 {
+.h1, .h2, .h3, .h3 a {
   color: $dark-blue;
+}
+
+.h3 a:hover, .h3 a:focus {
+  color: $lime-green;
 }
 
 .h2, .h3 {

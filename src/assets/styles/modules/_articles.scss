@@ -2,7 +2,7 @@
 
   &__headline {
     text-align: center;
-    
+
     @media screen and (min-width: $md) {
       text-align: left;
     }
@@ -14,9 +14,14 @@
   margin-top: 2rem;
   padding: 0;
 
-  &, &__image {
+  &__image {
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
+    height: 360px;
+    
+    @media  screen and (min-width: $md) {
+      height: 170px;
+    }
   }
 
   &__container {
@@ -39,4 +44,5 @@
   &__text {
     font-size: 12px;
   }
+
 }

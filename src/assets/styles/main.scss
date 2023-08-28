@@ -1,5 +1,4 @@
 @import "globals/index";
-
 @include google-font('Public+Sans');
 
 
@@ -11,17 +10,6 @@ body {
   font-weight: 300;
 }
 
-.row {
-  gap: 2%;
-}
-
-.col-md-3 {
-  @media screen and (min-width: $md) {
-    flex: 0 0 23%;
-    max-width: 23%;
-  }
-}
-
 
 section:not(.hero) {
   padding-top: 4rem;
@@ -29,55 +17,31 @@ section:not(.hero) {
 }
 
 
-
-footer {
-  padding-top: 2rem;
-  padding-bottom: 3rem;
-  height: 30vh;
-  color: $white;
-
-  @media screen and (min-width: $md) {
-    height: 15vh;
-   
+//LAYOUT OVERRIDE
+@media screen and (min-width: $md){
+  section:not(.hero) .row {
+    gap: 2%;
   }
 
-  a:not(.button) {
-    color: $white;
-    font-size: 1rem;
-    margin-top: 1rem;
-  }
-
-  a:not(.button):hover, a:not(.button):focus {
-    color: $lime-green;
-  }
-
-
-  .button {
-    margin: 1rem auto 0 auto;
-    @media  screen and (min-width: $md) {
-      margin: 1rem 0 0 auto;
-    }
+  section:not(.hero) .col-md-6 {
+    -ms-flex: 0 0 48%;
+    flex: 0 0 48%;
+    max-width: 48%;
   }
 
 }
 
-.social {
-
-  &__icon {
-    margin-right: 0.5rem;
+@media screen and (min-width: $lg){
+  section:not(.hero) .row {
+    gap: 3%;
   }
-}
 
+  section:not(.hero) .col-lg-3 {
+    -ms-flex: 0 0 22%;
+    flex: 0 0 22%;
+    max-width: 22%;
+  }
 
-.overlay {
-  position: fixed;
-  top: 90px;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  background-color: rgba(0,0,0,0.3);
 }
 
 

@@ -2219,6 +2219,10 @@ body {
   font-size: 1.2rem;
 }
 
+.nav {
+  color: hsl(233, 8%, 62%);
+}
+
 p, span {
   color: hsl(233, 8%, 62%);
   font-size: 14px;
@@ -2249,10 +2253,37 @@ p, span {
   background: linear-gradient(90deg, rgba(49, 211, 80, 0.424807423) 0%, rgba(49, 211, 92, 0.506039916) 24%, rgba(6, 205, 247, 0.5648634454) 100%);
 }
 
+.social__icon {
+  margin-right: 0.7rem;
+  width: 25px;
+  height: 25px;
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .social__icon {
+    margin-right: 0.4rem;
+    width: 20px;
+    height: 20px;
+  }
+}
+.social__icon:hover path, .social__icon:focus path {
+  fill: hsl(136, 65%, 51%);
+}
+
+.backdrop {
+  position: fixed;
+  top: 90px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 header {
   padding-top: 15px;
   padding-bottom: 15px;
-  height: 90px;
+  height: 70px;
   background-color: hsl(0, 0%, 100%);
   z-index: 2;
   position: fixed;
@@ -2260,7 +2291,7 @@ header {
 }
 header .logo {
   max-width: 200px;
-  padding: 15px;
+  padding: 10px;
 }
 header .nav {
   text-align: right;
@@ -2289,7 +2320,7 @@ header .button {
 }
 header .burger {
   height: auto;
-  margin-top: 15px;
+  margin-top: 10px;
   width: 50px;
 }
 header .burger:hover {
@@ -2303,6 +2334,17 @@ header .burger-icon {
 }
 header .close-icon {
   width: 20px;
+}
+@media screen and (min-width: 768px) {
+  header {
+    height: 90px;
+  }
+  header .logo {
+    padding: 15px;
+  }
+  header .burger {
+    margin-top: 15px;
+  }
 }
 
 .mobile-nav {
@@ -2328,26 +2370,33 @@ header .close-icon {
 .hero {
   padding-bottom: 3rem;
 }
-@media screen and (min-width: 992px) {
-  .hero {
-    padding-bottom: 0;
-  }
-  .hero .h1 {
-    font-size: 3rem;
-  }
-}
 .hero__banner {
   background-image: url("/src/assets/img/image-mockups.png"), url("/src/assets/img/bg-intro-mobile.svg");
   background-repeat: no-repeat, no-repeat;
-  background-position: center top -120px, center top -80px;
+  background-position: center top -80px, center top -30px;
   background-size: 90%, cover;
   height: 330px;
   position: absolute;
   left: 0;
 }
+.hero__content-box {
+  margin-top: 25rem;
+  text-align: center;
+}
+.hero__content {
+  margin-top: 1.5rem;
+}
+.hero .button {
+  margin: 2rem auto;
+}
 @media screen and (min-width: 452px) and (max-width: 767px) {
   .hero__banner {
     background-position: center top 100%, center top 80%;
+  }
+}
+@media screen and (min-width: 576px) {
+  .hero__content {
+    margin-top: 2rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -2358,8 +2407,21 @@ header .close-icon {
     height: 700px;
     background-size: contain, cover;
   }
+  .hero__content-box {
+    margin-top: 10rem;
+    text-align: left;
+  }
+  .hero .button {
+    margin: 2rem 0;
+  }
 }
 @media screen and (min-width: 992px) {
+  .hero {
+    padding-bottom: 0;
+  }
+  .hero .h1 {
+    font-size: 3rem;
+  }
   .hero__banner {
     background-image: url(/src/assets/img/image-mockups.png), url(/src/assets/img/bg-intro-desktop.svg);
     background-position: right -50px top 20px, left 70px top -88px;
@@ -2367,42 +2429,14 @@ header .close-icon {
     background-size: contain, cover;
     height: 800px;
   }
+  .hero__content-box {
+    margin-bottom: 5rem;
+  }
 }
 @media screen and (min-width: 1536px) {
   .hero__banner {
     background-size: contain, contain;
     background-position: right -35px top -75px, right -120px top -150px;
-  }
-}
-.hero__content-box {
-  margin-top: 25rem;
-  text-align: center;
-}
-@media screen and (min-width: 768px) {
-  .hero__content-box {
-    margin-top: 10rem;
-    text-align: left;
-  }
-}
-@media screen and (min-width: 992px) {
-  .hero__content-box {
-    margin-bottom: 5rem;
-  }
-}
-.hero__content {
-  margin-top: 1.5rem;
-}
-@media screen and (min-width: 576px) {
-  .hero__content {
-    margin-top: 2rem;
-  }
-}
-.hero .button {
-  margin: 2rem auto;
-}
-@media screen and (min-width: 768px) {
-  .hero .button {
-    margin: 2rem 0;
   }
 }
 
@@ -2445,9 +2479,8 @@ header .close-icon {
 .article__image {
   border-top-left-radius: 7px;
   border-top-right-radius: 7px;
-  height: 360px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .article__image {
     height: 170px;
   }
@@ -2469,6 +2502,28 @@ header .close-icon {
   font-size: 12px;
 }
 
+footer {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  color: hsl(0, 0%, 100%);
+}
+footer a:not(.button) {
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+  margin-top: 20px;
+}
+footer a:not(.button):hover, footer a:not(.button):focus {
+  color: hsl(136, 65%, 51%);
+}
+footer .button {
+  margin: 2rem auto 0 auto;
+}
+@media screen and (min-width: 768px) {
+  footer .button {
+    margin: 1.5rem 0 0 auto;
+  }
+}
+
 body {
   background-color: white;
   overflow-x: hidden;
@@ -2477,63 +2532,30 @@ body {
   font-weight: 300;
 }
 
-.row {
-  gap: 2%;
-}
-
-@media screen and (min-width: 768px) {
-  .col-md-3 {
-    flex: 0 0 23%;
-    max-width: 23%;
-  }
-}
-
 section:not(.hero) {
   padding-top: 4rem;
   padding-bottom: 5rem;
 }
 
-footer {
-  padding-top: 2rem;
-  padding-bottom: 3rem;
-  height: 30vh;
-  color: hsl(0, 0%, 100%);
-}
 @media screen and (min-width: 768px) {
-  footer {
-    height: 15vh;
+  section:not(.hero) .row {
+    gap: 2%;
+  }
+  section:not(.hero) .col-md-6 {
+    -ms-flex: 0 0 48%;
+    flex: 0 0 48%;
+    max-width: 48%;
   }
 }
-footer a:not(.button) {
-  color: hsl(0, 0%, 100%);
-  font-size: 1rem;
-  margin-top: 1rem;
-}
-footer a:not(.button):hover, footer a:not(.button):focus {
-  color: hsl(136, 65%, 51%);
-}
-footer .button {
-  margin: 1rem auto 0 auto;
-}
-@media screen and (min-width: 768px) {
-  footer .button {
-    margin: 1rem 0 0 auto;
+@media screen and (min-width: 992px) {
+  section:not(.hero) .row {
+    gap: 3%;
   }
-}
-
-.social__icon {
-  margin-right: 0.5rem;
-}
-
-.overlay {
-  position: fixed;
-  top: 90px;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  background-color: rgba(0, 0, 0, 0.3);
+  section:not(.hero) .col-lg-3 {
+    -ms-flex: 0 0 22%;
+    flex: 0 0 22%;
+    max-width: 22%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

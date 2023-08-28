@@ -17,9 +17,8 @@
   &__image {
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
-    height: 360px;
-    
-    @media  screen and (min-width: $md) {
+
+    @media  screen and (min-width: $lg) {
       height: 170px;
     }
   }

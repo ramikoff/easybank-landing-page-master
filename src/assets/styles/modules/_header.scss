@@ -1,7 +1,7 @@
 header {
   padding-top: 15px;
   padding-bottom: 15px;
-  height: 90px;
+  height: 70px;
   background-color: $white;
   z-index: 2;
   position: fixed;
@@ -9,7 +9,7 @@ header {
 
   .logo {
     max-width: 200px;
-    padding: 15px;
+    padding: 10px;
   }
 
   .nav {
@@ -44,7 +44,7 @@ header {
 
   .burger {
     height: auto;
-    margin-top: 15px;
+    margin-top: 10px;
     width: 50px;
 
     &:hover {
@@ -56,12 +56,24 @@ header {
     display: none;
   }
 
-  .burger-icon  {
+  .burger-icon {
     width: 30px;
   }
 
   .close-icon {
     width: 20px;
+  }
+
+  @media screen and (min-width: $md) {
+    height: 90px;
+
+    .logo {
+      padding: 15px;
+    }
+
+    .burger {
+      margin-top: 15px;
+    }
   }
 
 
@@ -87,4 +99,8 @@ header {
   &__item:hover {
     border-bottom: 5px solid $lime-green;
   }
+
+
 }
+
+

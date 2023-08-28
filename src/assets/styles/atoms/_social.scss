@@ -1,0 +1,23 @@
+.social {
+
+
+  &__icon {
+    margin-right: 0.7rem;
+    width: 25px;
+    height: 25px;
+    
+    @media  screen and (min-width: $md) and (max-width: $lg){
+      margin-right: 0.4rem;
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+
+  &__icon:hover, &__icon:focus {
+    path {
+      fill: $lime-green;
+    }
+  }
+  
+}

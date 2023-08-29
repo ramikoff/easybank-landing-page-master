@@ -43,7 +43,7 @@
   @media screen and (min-width: $md) {
     &__banner {
       background-image: url(/src/assets/img/image-mockups.png), url(/src/assets/img/bg-intro-desktop.svg);
-      background-position: right -70px top 45px, left -40px top -160px;
+      background-position: right -70px top 100px, left -40px top -80px;
       left: 50%;
       height: 700px;
       background-size: contain, cover;
@@ -67,16 +67,23 @@
 
     &__banner {
       background-image: url(/src/assets/img/image-mockups.png), url(/src/assets/img/bg-intro-desktop.svg);
-      background-position: right -50px top 20px, left 70px top -88px;
-      left: 45%;
       background-size: contain, cover;
       height: 800px;
+      background-position: right -110px top 20px, left -13px top -116px;
+      left: 45%;
     }
 
     &__content-box {
       margin-bottom: 5rem;
     }
 
+  }
+
+  @media screen and (min-width: $xl) {
+    &__banner {
+      background-size: contain, contain;
+      background-position: right -80px top -25px, right -290px top -110px
+    }
   }
 
   @media screen and (min-width: $xxl) {

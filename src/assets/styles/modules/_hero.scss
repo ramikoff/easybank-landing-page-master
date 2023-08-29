@@ -1,19 +1,11 @@
 .hero {
   padding-bottom: 3rem;
-  &__banner {
-    background-image: url("/src/assets/img/image-mockups.png"), url("/src/assets/img/bg-intro-mobile.svg");
-    background-repeat: no-repeat, no-repeat;
-    background-position: center top -80px, center top -30px;
-    background-size: 90%, cover;
-    height: 330px;
-    position: absolute;
-    left: 0;
-
-  }
-
+  background-image: url(/src/assets/img/bg-intro-mobile.svg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: contain;
 
   &__content-box {
-    margin-top: 25rem;
     text-align: center;
   }
 
@@ -26,28 +18,31 @@
     margin: 2rem auto;
   }
 
+  .image-mockups {
+    transform: translateY(-10%);
+  }
+
 
   //@media
   @media screen and (min-width: 452px) and (max-width: 767px) {
-    &__banner {
-      background-position: center top 100%, center top 80%;
-    }
+
   }
 
   @media screen and (min-width: $sm) {
     &__content {
       margin-top: 2rem;
     }
+
+
+
   }
 
   @media screen and (min-width: $md) {
-    &__banner {
-      background-image: url(/src/assets/img/image-mockups.png), url(/src/assets/img/bg-intro-desktop.svg);
-      background-position: right -70px top 100px, left -40px top -80px;
-      left: 50%;
-      height: 700px;
-      background-size: contain, cover;
-    }
+    background-image: url(/src/assets/img/bg-intro-desktop.svg);
+    background-position: right -400px top -75px;
+    background-repeat: no-repeat;
+    background-size: contain;
+
 
     &__content-box {
       margin-top: 10rem;
@@ -57,20 +52,16 @@
     .button {
       margin: 2rem 0;
     }
+
+    .image-mockups {
+      width: 50%;
+    }
   }
 
   @media screen and (min-width: $lg) {
     padding-bottom: 0;
     .h1 {
       font-size: 3rem;
-    }
-
-    &__banner {
-      background-image: url(/src/assets/img/image-mockups.png), url(/src/assets/img/bg-intro-desktop.svg);
-      background-size: contain, cover;
-      height: 800px;
-      background-position: right -110px top 20px, left -13px top -116px;
-      left: 45%;
     }
 
     &__content-box {
@@ -80,17 +71,11 @@
   }
 
   @media screen and (min-width: $xl) {
-    &__banner {
-      background-size: contain, contain;
-      background-position: right -80px top -25px, right -290px top -110px
-    }
+
   }
 
   @media screen and (min-width: $xxl) {
-    &__banner {
-      background-size: contain, contain;
-      background-position: right -35px top -75px, right -120px top -150px;
-    }
+
   }
 
 }

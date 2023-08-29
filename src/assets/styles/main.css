@@ -2369,18 +2369,12 @@ header .close-icon {
 
 .hero {
   padding-bottom: 3rem;
-}
-.hero__banner {
-  background-image: url("/src/assets/img/image-mockups.png"), url("/src/assets/img/bg-intro-mobile.svg");
-  background-repeat: no-repeat, no-repeat;
-  background-position: center top -80px, center top -30px;
-  background-size: 90%, cover;
-  height: 330px;
-  position: absolute;
-  left: 0;
+  background-image: url(/src/assets/img/bg-intro-mobile.svg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .hero__content-box {
-  margin-top: 25rem;
   text-align: center;
 }
 .hero__content {
@@ -2389,10 +2383,8 @@ header .close-icon {
 .hero .button {
   margin: 2rem auto;
 }
-@media screen and (min-width: 452px) and (max-width: 767px) {
-  .hero__banner {
-    background-position: center top 100%, center top 80%;
-  }
+.hero .image-mockups {
+  transform: translateY(-10%);
 }
 @media screen and (min-width: 576px) {
   .hero__content {
@@ -2400,12 +2392,11 @@ header .close-icon {
   }
 }
 @media screen and (min-width: 768px) {
-  .hero__banner {
-    background-image: url(/src/assets/img/image-mockups.png), url(/src/assets/img/bg-intro-desktop.svg);
-    background-position: right -70px top 100px, left -40px top -80px;
-    left: 50%;
-    height: 700px;
-    background-size: contain, cover;
+  .hero {
+    background-image: url(/src/assets/img/bg-intro-desktop.svg);
+    background-position: right -400px top -75px;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
   .hero__content-box {
     margin-top: 10rem;
@@ -2413,6 +2404,9 @@ header .close-icon {
   }
   .hero .button {
     margin: 2rem 0;
+  }
+  .hero .image-mockups {
+    width: 50%;
   }
 }
 @media screen and (min-width: 992px) {
@@ -2422,30 +2416,10 @@ header .close-icon {
   .hero .h1 {
     font-size: 3rem;
   }
-  .hero__banner {
-    background-image: url(/src/assets/img/image-mockups.png), url(/src/assets/img/bg-intro-desktop.svg);
-    background-size: contain, cover;
-    height: 800px;
-    background-position: right -110px top 20px, left -13px top -116px;
-    left: 45%;
-  }
   .hero__content-box {
     margin-bottom: 5rem;
   }
 }
-@media screen and (min-width: 1200px) {
-  .hero__banner {
-    background-size: contain, contain;
-    background-position: right -80px top -25px, right -290px top -110px;
-  }
-}
-@media screen and (min-width: 1536px) {
-  .hero__banner {
-    background-size: contain, contain;
-    background-position: right -35px top -75px, right -120px top -150px;
-  }
-}
-
 .features {
   text-align: center;
 }

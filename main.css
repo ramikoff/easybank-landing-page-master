@@ -2400,7 +2400,7 @@ header .close-icon {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url(src/assets/img/bg-intro-desktop.svg);
+    background-image: url(/src/assets/img/bg-intro-desktop.svg);
     background-position: top -70px right -350px;
     background-repeat: no-repeat;
     background-size: 850px;

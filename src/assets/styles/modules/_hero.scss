@@ -1,6 +1,6 @@
 .hero {
   padding-bottom: 3rem;
-  background-image: url(/src/assets/img/image-mockups.png), url(/src/assets/img/bg-intro-mobile.svg);
+  background-image: url(src/assets/img/image-mockups.png), url(src/assets/img/bg-intro-mobile.svg);
   background-position: center top -50px, center top;
   background-repeat: no-repeat, no-repeat;
   background-size: 90%, contain;
@@ -38,7 +38,7 @@
   }
 
   @media screen and (min-width: $md) {
-    background-image: url(/src/assets/img/bg-intro-desktop.svg);
+    background-image: url(src/assets/img/bg-intro-desktop.svg);
     background-position: top -70px right -350px;
     background-repeat: no-repeat;
     background-size: 850px;

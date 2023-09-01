@@ -2219,7 +2219,7 @@ body {
   font-size: 1.2rem;
 }
 
-.nav {
+nav a {
   color: hsl(233, 8%, 62%);
 }
 
@@ -2374,7 +2374,7 @@ header .close-icon {
 
 .hero {
   padding-bottom: 3rem;
-  background-image: url(src/assets/img/image-mockups.png), url(src/assets/img/bg-intro-mobile.svg);
+  background-image: url(/src/assets/img/image-mockups.png), url(/src/assets/img/bg-intro-mobile.svg);
   background-position: center top -50px, center top;
   background-repeat: no-repeat, no-repeat;
   background-size: 90%, contain;
@@ -2405,7 +2405,7 @@ header .close-icon {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url(src/assets/img/bg-intro-desktop.svg);
+    background-image: url(/src/assets/img/bg-intro-desktop.svg);
     background-position: top -70px right -350px;
     background-repeat: no-repeat;
     background-size: 850px;

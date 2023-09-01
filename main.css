@@ -2359,6 +2359,11 @@ header .close-icon {
   padding: 2rem;
   border-radius: 7px;
 }
+@media screen and (min-width: 768px) {
+  .mobile-nav {
+    top: 110px;
+  }
+}
 .mobile-nav__item {
   margin-top: 2rem;
   border-bottom: 5px solid transparent;

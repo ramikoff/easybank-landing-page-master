@@ -91,6 +91,10 @@ header {
   padding: 2rem;
   border-radius: 7px;
 
+  @media screen and (min-width: $md) {
+    top: 110px;
+  }
+
   &__item {
     margin-top: 2rem;
     border-bottom: 5px solid transparent;
